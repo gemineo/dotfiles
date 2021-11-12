@@ -79,7 +79,7 @@ OMZ_PLUGS=(git)
 
 # For Mac lovers
 if [[ `uname` == "Darwin" ]]; then
-    OMZ_PLUGS+=(osx)
+    OMZ_PLUGS+=(macos)
 fi
 
 # Bye yum
