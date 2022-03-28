@@ -119,7 +119,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # iTerm2 integration on OSX
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+[ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Config for additonal tools
+[ -f "${HOME}/.fzf.zsh" ]  && source "${HOME}/.fzf.zsh"
+[ -f "${HOME}/.ghcup/env" ] && source "${HOME}/.ghcup/env" # ghcup-env / Haskell
 
-test -e "${HOME}/.fzf.zsh"  && source ~/.fzf.zsh
+# Include private data (e.g. github tokens)
+[ -f "${HOME}/.zsh_private" ] && source "${HOME}/.zsh_private"
