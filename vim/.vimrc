@@ -54,7 +54,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
-
+Plug 'tpope/vim-vinegar'
 
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
