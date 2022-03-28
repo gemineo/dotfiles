@@ -79,7 +79,7 @@ OMZ_PLUGS=(git)
 
 # For Mac lovers
 if [[ `uname` == "Darwin" ]]; then
-    OMZ_PLUGS+=(osx)
+    OMZ_PLUGS+=(macos)
 fi
 
 # Bye yum
@@ -122,4 +122,4 @@ source $ZSH/oh-my-zsh.sh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+test -e "${HOME}/.fzf.zsh"  && source ~/.fzf.zsh
