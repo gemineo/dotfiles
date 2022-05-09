@@ -56,9 +56,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
-" Command-line fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
 Plug 'tpope/vim-vinegar'
 
 Plug 'vim-pandoc/vim-pandoc'
